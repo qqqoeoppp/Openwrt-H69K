@@ -45,6 +45,9 @@ jobs:
     - name: Checkout
       uses: actions/checkout@main
 
+    - name: Setup tmate SSH session
+      uses: mxschmitt/action-tmate@v3
+
     - name: 检查服务器配置
       run: |
         echo "若分配的服务器性能不足，务必及时取消，重新运行！"
