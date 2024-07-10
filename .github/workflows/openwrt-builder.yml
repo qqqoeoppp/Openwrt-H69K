@@ -45,9 +45,6 @@ jobs:
     - name: Checkout
       uses: actions/checkout@main
 
-    - name: Setup tmate SSH session
-      uses: mxschmitt/action-tmate@v3
-
     - name: 检查服务器配置
       run: |
         echo "若分配的服务器性能不足，务必及时取消，重新运行！"
@@ -124,6 +121,9 @@ jobs:
         make download -j8
         find dl -size -1024c -exec ls -l {} \;
         find dl -size -1024c -exec rm -f {} \;
+
+    - name: 编译前创建 SSH 会话，手动检查情况。
+      uses: mxschmitt/action-tmate@v3
 
     - name: Compile the firmware
       id: compile
