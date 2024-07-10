@@ -18,3 +18,15 @@
 
 # Modify hostname
 #sed -i 's/OpenWrt/P3TERX-Router/g' package/base-files/files/bin/config_generate
+
+
+
+#
+# Daed Support
+#
+
+# Add xdp-sockets-diag kernel module, add content to: package/kernel/linux/modules/netsupport.mk
+cat kernel_mod/xdp-sockets-diag.mk >> package/kernel/linux/modules/netsupport.mk
+
+# build luci-app-daed
+make package/dae/luci-app-daed/compile V=s 
