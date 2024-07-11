@@ -29,4 +29,4 @@
 cat $GITHUB_WORKSPACE/kernel_mod/xdp-sockets-diag.mk >> package/kernel/linux/modules/netsupport.mk
 
 # build luci-app-daed
-make package/dae/luci-app-daed/compile V=s 
+# make package/dae/luci-app-daed/compile V=s 
