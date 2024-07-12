@@ -25,7 +25,7 @@ git clone --depth=1 https://github.com/Siriling/5G-Modem-Support package/Modem-S
 
 # daed 大鹅
 
-git clone --depth=1 https://github.com/QiuSimons/luci-app-daed package/dae
+# git clone --depth=1 https://github.com/QiuSimons/luci-app-daed package/dae
 
 # 删除部分插件
 rm -rf package/Modem-Support/{rooter,luci-app-sms-tool,sms-tool}
