@@ -26,7 +26,7 @@
 #
 
 # Add xdp-sockets-diag kernel module, add content to: package/kernel/linux/modules/netsupport.mk
-# cat $GITHUB_WORKSPACE/kernel_mod/xdp-sockets-diag.mk >> package/kernel/linux/modules/netsupport.mk
+cat $GITHUB_WORKSPACE/kernel_mod/xdp-sockets-diag.mk >> package/kernel/linux/modules/netsupport.mk
 
 # build luci-app-daed
 # make package/dae/luci-app-daed/compile V=s 

@@ -25,13 +25,14 @@ git clone --depth=1 https://github.com/Siriling/5G-Modem-Support package/Modem-S
 
 # daed 大鹅
 
-# git clone --depth=1 https://github.com/QiuSimons/luci-app-daed package/dae
+git clone --depth=1 https://github.com/QiuSimons/luci-app-daed package/dae
 
 # 删除部分插件
 rm -rf package/Modem-Support/{rooter,luci-app-sms-tool,sms-tool}
 
 # 添加风扇
 git clone --depth=1 https://github.com/2253845067/h69k-fanctrl package/h69k-fanctrl
+
 
 # 添加fm350专用拨号插件
 # git clone -b lede https://github.com/2253845067/modemfeed
